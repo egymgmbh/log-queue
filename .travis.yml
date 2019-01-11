@@ -3,4 +3,4 @@ dist: xenial
 jdk:
   - openjdk11
 script:
-  - ./gradlew --info publish
+  - test TRAVIS_BRANCH = "master" && ./gradlew publish
