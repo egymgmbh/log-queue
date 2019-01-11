@@ -3,4 +3,4 @@ jdk:
   - oraclejdk8
   - openjdk7
 script:
-  - ./gradlew clean build publish
+  - ./gradlew --info publish
