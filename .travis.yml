@@ -3,4 +3,6 @@ jdk:
   - oraclejdk8
   - openjdk7
 script:
+  - echo $SONATYPE_USER
+  - echo $SONATYPE_PASS
   - ./gradlew --info publish
