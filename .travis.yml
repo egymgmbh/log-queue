@@ -2,6 +2,8 @@ language: java
 jdk:
   - oraclejdk8
   - openjdk7
+before_script:
+  - echo "${#SONATYPE_PASS}"
+  - env
 script:
-  - echo ${#SONATYPE_PASS}
   - ./gradlew --info publish
