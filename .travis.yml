@@ -1,9 +1,6 @@
 language: java
+dist: xenial
 jdk:
-  - oraclejdk8
-  - openjdk7
-before_install:
-  - mkdir -p ~/.gradle
-  - echo "nexusUser=foo" > ~/.gradle/gradle.properties
-  - echo "nexusPassword=bar" >> ~/.gradle/gradle.properties
-
+  - openjdk11
+script:
+  - test TRAVIS_BRANCH != "master" || ./gradlew publish

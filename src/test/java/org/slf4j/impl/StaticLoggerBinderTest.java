@@ -10,7 +10,7 @@ import static org.testng.AssertJUnit.*;
 import org.slf4j.ILoggerFactory;
 import org.testng.annotations.Test;
 
-import de.egym.logqueue.slf4j.EgymLoggerFactory;
+import com.egym.logqueue.slf4j.EgymLoggerFactory;
 
 /**
  * Tests {@link StaticLoggerBinder}.
